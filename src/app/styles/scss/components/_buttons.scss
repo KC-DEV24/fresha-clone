@@ -1,0 +1,54 @@
+.btn {
+  font-size: 16px;
+  padding: 18px 26px;
+  align-items: center;
+  gap: 5px;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 8px;
+  font-family: "CircularStdBold", sans-serif;
+  transition: .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-weight: 700;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+  }
+  &.btn-sm {
+    padding: 16px;
+    font-size: 14px;
+  }
+}
+
+.btn-primary {
+  color: white;
+  background-color: var(--primary);
+  position: relative;
+  &:hover {
+    background-color: black;
+  }
+}
+
+.btn-dark {
+  color: white;
+  background: black;
+  &:hover {
+    background-color: var(--primary);
+  }
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 16px 22px;
+  }
+}
+
+@media (max-width: 375px) {
+  .btn {
+    padding: 16px 18px;
+  }
+}

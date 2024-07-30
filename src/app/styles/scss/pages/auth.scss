@@ -1,0 +1,91 @@
+.auth-sec {
+    .content-wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 50px 20px;
+    }
+
+    .coutry-code-wrapper {
+        position: relative;
+        cursor: pointer;
+        .country-code-span {
+            position: relative;
+            white-space: nowrap;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 11px;
+                height: 7px;
+                background-image: url('/img/icons/chevron-down-dark.svg');
+                background-size: contain;
+                opacity: .7;
+                background-repeat: no-repeat;
+                right: 18px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .country-box {
+            position: absolute;
+            background-color: white;
+            border: 1px solid var(--gray2);
+            border-radius: 10px;
+            z-index: 2;
+            padding: 10px;
+            left: 0;
+            top: 100%;
+            width: 300px;
+            ul {
+                height: 300px;
+                overflow: auto;
+                li {
+                    font-size: 14px;
+                    padding: 4px 6px;
+                    border-radius: 4px;
+                    &:hover {
+                        background-color: var(--primary-light);
+                    }
+                }
+            }
+            .form-control {
+                padding: 8px 14px;
+            }
+        }
+    }
+    .btn-social {
+        box-shadow: 4px 0px 14px #0000000e ;
+        border: 1px solid white;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    .custom-hr {
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: calc(50% - 40px);
+            height: 1px;
+            background-color: var(--gray3);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::before {
+            left: 0;
+        }
+        &::after {
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .user-flow-sec {
+        .sec-img {
+            display: none;
+        }
+    }
+}

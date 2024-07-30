@@ -1,0 +1,115 @@
+.countries-sec {
+    .menu {
+        li {
+            &:last-child {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+
+            a {
+                color: #585858;
+                transition: .3s;
+                margin-bottom: 20px;
+                display: block;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    .footer-top {
+        position: relative;
+        padding: clamp(45px, 7vw, 60px) 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: calc(100% - 80px);
+            height: 1px;
+            background-color: #B4B4B4;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+
+    .menu {
+        li {
+            &:last-child {
+                a {
+                    margin-bottom: 0;
+                }
+            }
+
+            a {
+                color: #585858;
+                transition: .3s;
+                margin-bottom: 20px;
+                display: block;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        position: relative;
+        padding: 20px 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: calc(100% - 80px);
+            height: 1px;
+            background-color: #B4B4B4;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .footer {
+        .footer-top {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .menu {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+        .footer-top {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        .footer-top {
+            grid-template-columns: 1fr 1fr;
+            &::before {
+                width: calc(100% - 40px);
+            }
+        }
+        .footer-bottom {
+            &::before {
+                width: calc(100% - 40px);
+            }
+        }
+    }
+}

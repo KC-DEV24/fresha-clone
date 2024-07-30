@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url('/fonts/coolvetica/coolvetica.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url('/fonts/gilroy/Gilroy-Medium.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url('/fonts/gilroy/Gilroy-Semibold.ttf') format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url('/fonts/gilroy/Gilroy-Bold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+// classes
+.font-coolvetica {
+  font-family: "Coolvetica", sans-serif;
+}
+.font-gilroy-medium {
+  font-family: "Gilroy-Medium", sans-serif !important;
+}
+.font-gilroy-semibold {
+  font-family: "Gilroy-Semibold", sans-serif !important;
+}
+.font-gilroy-bold {
+  font-family: "Gilroy-Bold", sans-serif !important;
+}
